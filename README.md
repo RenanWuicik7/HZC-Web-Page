@@ -52,7 +52,7 @@ Durante o desenvolvimento aprendi e consegui replicar os seguintes tópicos:
 - Diferença entre o flexbox e o grid;
 - Flex container;
 - A propriedade display: Flex;
-- Justify-content e align-items;
+- Justify-content e align-itens;
 - O flex-wrap e flex-direction;
 - A propriedade gap e seus “parentes”;
 - Como organizar elementos com grid-row e grid-column;
