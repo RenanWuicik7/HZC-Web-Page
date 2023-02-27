@@ -215,8 +215,24 @@ body {
     background-color: #2C343A;
 }
 
+.cartao__imagem:hover {
+    opacity: 0.5;
+	transition: 0.5s;
+    width: 103%;
+}
+
 .cartao__imagem--desktop {
     display: none;
+}
+
+.cartao__imagem--desktop:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.cartao-opacidade:hover {
+    opacity: 0.2;
+    transform: 0.5s;
 }
 
 .cartao--destaque {
@@ -238,6 +254,12 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     grid-column: span 2;
+}
+
+.cartao__titulo:hover {
+    color: #0480DC;
+    text-decoration: underline;
+    transition: 0.5s;
 }
 
 .cartao__perfil {
@@ -288,6 +310,11 @@ body {
     font-size: 24px;
 }
 
+.cartao__botao--local::before {
+    content: "\e909";
+    font-size: 24px;
+}
+
 .cartao__botao--destaque {
     width: 100%;
     grid-column: span 2;
@@ -334,11 +361,13 @@ body {
         grid-column: auto;
     }
 
-    .cartao__link {
-        font-size: 0.8rem;
-        font-weight: 600;
+    .cartao__novoTitulo {
+        grid-column: span 2;
+    }
+
+    .cartao__novoTitulo:hover {
         color: #0480DC;
-        justify-self: flex-end;
+        transition: 0.5s;
     }
     
     .cartao__lista {
@@ -358,16 +387,92 @@ body {
         grid-row: span 2;
     }
 
+    .cartao__item-thumbnail:hover {
+        opacity: 0.2;
+        width: 35px;
+    }
+
     .cartao__item-titulo {
         font-size: 0.9rem;
         line-height: 1.2rem;
         font-weight: 700;
     }
 
+    .cartao__item-titulo:hover {
+        color: #0480DC;
+        transition: 0.5s;
+    }
+
     .cartao__item-perfil {
         font-size: 0.8rem;
         color: #95999C;
     }
+    
+    .cartao__artigo1 {
+        display: inline-block;
+        width: 60vh;
+        height: 35vh;
+    }
+    
+    .cartao__artigo2 {
+        padding-left: 3vh;
+        width: 45vh;
+        height: 35vh;
+    }
+    
+    .cartao__link {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #0480DC;
+        justify-self: flex-end;
+    }
+}
+
+.titulo-artigo {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: 'Open Sans', 'icones', sans-serif;
+}
+
+.conteudo-artigo {
+    font-family: 'Open Sans', 'icones', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.artigo-div {
+    display: block;
+    text-align: center;
+}
+
+.cartao__artigo1 {
+    width: 50vh;
+    padding: 10px;
+}
+
+.cartao__artigo2 {
+    width: 50vh;
+}
+
+.cartao__artigo1:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.cartao__artigo2:hover {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.cartao__link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0480DC;
+    justify-self: flex-end;
 }
 
 .secao {
@@ -403,4 +508,12 @@ body {
     .secao-produtos {
         grid-area: secao-produtos;
     }
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
 }
